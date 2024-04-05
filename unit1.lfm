@@ -1,0 +1,122 @@
+object Form1: TForm1
+  Left = 255
+  Height = 464
+  Top = 131
+  Width = 653
+  Caption = 'Form1'
+  ClientHeight = 464
+  ClientWidth = 653
+  LCLVersion = '3.2.0.0'
+  object Label1: TLabel
+    Left = 24
+    Height = 28
+    Top = 27
+    Width = 52
+    Caption = 'Nama'
+    Font.Height = -20
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 24
+    Height = 28
+    Top = 80
+    Width = 40
+    Caption = 'Nilai'
+    Font.Height = -20
+    ParentFont = False
+  end
+  object edtNama: TEdit
+    Left = 112
+    Height = 36
+    Top = 27
+    Width = 200
+    DoubleBuffered = False
+    Font.Height = -20
+    ParentDoubleBuffered = False
+    ParentFont = False
+    TabOrder = 0
+    OnChange = edtNamaChange
+  end
+  object edtNilai: TEdit
+    Left = 112
+    Height = 36
+    Top = 72
+    Width = 200
+    Font.Height = -20
+    ParentFont = False
+    TabOrder = 1
+    OnChange = edtNamaChange
+  end
+  object btnHitung: TButton
+    Left = 24
+    Height = 25
+    Top = 144
+    Width = 75
+    Caption = 'Hitung Nilai'
+    TabOrder = 2
+    OnClick = btnHitungClick
+  end
+  object Panel1: TPanel
+    Left = 348
+    Height = 473
+    Top = -1
+    Width = 303
+    Caption = 'Panel1'
+    ClientHeight = 473
+    ClientWidth = 303
+    Color = clBlack
+    ParentBackground = False
+    ParentColor = False
+    TabOrder = 3
+    OnClick = Panel1Click
+    object Label3: TLabel
+      Left = 24
+      Height = 37
+      Top = 19
+      Width = 199
+      Caption = 'Status Kelulusan:'
+      Color = clWhite
+      Font.Color = clWhite
+      Font.Height = -27
+      ParentColor = False
+      ParentFont = False
+    end
+    object lblStatus: TLabel
+      Left = 20
+      Height = 45
+      Top = 72
+      Width = 13
+      Caption = '-'
+      Color = clWhite
+      Font.Color = clWhite
+      Font.Height = -33
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label4: TLabel
+      Left = 24
+      Height = 37
+      Top = 136
+      Width = 78
+      Caption = 'Grade:'
+      Color = clWhite
+      Font.Color = clWhite
+      Font.Height = -27
+      ParentColor = False
+      ParentFont = False
+    end
+    object lblGrade: TLabel
+      Left = 128
+      Height = 106
+      Top = 208
+      Width = 32
+      Alignment = taCenter
+      Caption = '-'
+      Color = clWhite
+      Font.Color = clWhite
+      Font.Height = -80
+      ParentColor = False
+      ParentFont = False
+    end
+  end
+end
